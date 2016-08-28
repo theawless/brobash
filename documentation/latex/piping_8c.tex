@@ -1,0 +1,57 @@
+\hypertarget{piping_8c}{}\section{/home/theawless/\+Clion\+Projects/brobash/src/piping.c File Reference}
+\label{piping_8c}\index{/home/theawless/\+Clion\+Projects/brobash/src/piping.\+c@{/home/theawless/\+Clion\+Projects/brobash/src/piping.\+c}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}execute.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{piping_8c_a3569892ef8c55838467a227fa6efcbd4}{process\+\_\+spwanner} (int in, int out, const struct \hyperlink{structsimple__command}{simple\+\_\+command} command)
+\item 
+int \hyperlink{piping_8c_a9b5341a2159ae71cb72eb0e6f79f1a84}{pipe\+\_\+execute} (const struct \hyperlink{structsimple__command}{simple\+\_\+command} $\ast$commands, int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{piping.\+c@{piping.\+c}!pipe\+\_\+execute@{pipe\+\_\+execute}}
+\index{pipe\+\_\+execute@{pipe\+\_\+execute}!piping.\+c@{piping.\+c}}
+\subsubsection[{\texorpdfstring{pipe\+\_\+execute(const struct simple\+\_\+command $\ast$commands, int n)}{pipe_execute(const struct simple_command *commands, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}int pipe\+\_\+execute (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf simple\+\_\+command} $\ast$}]{commands, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{piping_8c_a9b5341a2159ae71cb72eb0e6f79f1a84}{}\label{piping_8c_a9b5341a2159ae71cb72eb0e6f79f1a84}
+Function to execute n pipe commands 
+\begin{DoxyParams}{Parameters}
+{\em commands} & contains the commands to be executed \\
+\hline
+{\em n} & number of pipe separated commands \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+exit status 
+\end{DoxyReturn}
+\index{piping.\+c@{piping.\+c}!process\+\_\+spwanner@{process\+\_\+spwanner}}
+\index{process\+\_\+spwanner@{process\+\_\+spwanner}!piping.\+c@{piping.\+c}}
+\subsubsection[{\texorpdfstring{process\+\_\+spwanner(int in, int out, const struct simple\+\_\+command command)}{process_spwanner(int in, int out, const struct simple_command command)}}]{\setlength{\rightskip}{0pt plus 5cm}int process\+\_\+spwanner (
+\begin{DoxyParamCaption}
+\item[{int}]{in, }
+\item[{int}]{out, }
+\item[{const struct {\bf simple\+\_\+command}}]{command}
+\end{DoxyParamCaption}
+)}\hypertarget{piping_8c_a3569892ef8c55838467a227fa6efcbd4}{}\label{piping_8c_a3569892ef8c55838467a227fa6efcbd4}
+Spawns a child process to execute a command taking input from in fd and giving output to out fd 
+\begin{DoxyParams}{Parameters}
+{\em in} & input file descriptor \\
+\hline
+{\em out} & output file descriptor \\
+\hline
+{\em command} & structure containing information about the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+exit status of the process 
+\end{DoxyReturn}

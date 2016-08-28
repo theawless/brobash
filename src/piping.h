@@ -1,0 +1,1 @@
+int pipe_execute(const struct simple_command *command, int num_commands);

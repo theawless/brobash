@@ -1,0 +1,89 @@
+\hypertarget{brobash_8c}{}\section{/home/theawless/\+Clion\+Projects/brobash/src/brobash.c File Reference}
+\label{brobash_8c}\index{/home/theawless/\+Clion\+Projects/brobash/src/brobash.\+c@{/home/theawless/\+Clion\+Projects/brobash/src/brobash.\+c}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}piping.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parser.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}history.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{brobash_8c_a6129eaf8e0216e9b4740365e938d24b1}{read\+\_\+line} (F\+I\+LE $\ast$stream, size\+\_\+t $\ast$line\+\_\+size, ssize\+\_\+t $\ast$read\+\_\+status)
+\item 
+int \hyperlink{brobash_8c_a52b1e04eea1dce4ce7500f7c65bf1c9b}{process\+\_\+and\+\_\+execute\+\_\+line} (char $\ast$line)
+\item 
+void \hyperlink{brobash_8c_a5f6993e7744fc5b04992ce29fd0b0dad}{run\+\_\+loop} (F\+I\+LE $\ast$stream)
+\item 
+int \hyperlink{brobash_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{brobash.\+c@{brobash.\+c}!main@{main}}
+\index{main@{main}!brobash.\+c@{brobash.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{brobash_8c_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{brobash_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+Enters the program from here. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of args. \\
+\hline
+{\em argv} & File to take as input, if provided. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+exit status 
+\end{DoxyReturn}
+\index{brobash.\+c@{brobash.\+c}!process\+\_\+and\+\_\+execute\+\_\+line@{process\+\_\+and\+\_\+execute\+\_\+line}}
+\index{process\+\_\+and\+\_\+execute\+\_\+line@{process\+\_\+and\+\_\+execute\+\_\+line}!brobash.\+c@{brobash.\+c}}
+\subsubsection[{\texorpdfstring{process\+\_\+and\+\_\+execute\+\_\+line(char $\ast$line)}{process_and_execute_line(char *line)}}]{\setlength{\rightskip}{0pt plus 5cm}int process\+\_\+and\+\_\+execute\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{brobash_8c_a52b1e04eea1dce4ce7500f7c65bf1c9b}{}\label{brobash_8c_a52b1e04eea1dce4ce7500f7c65bf1c9b}
+Process and execute the line returned by read\+\_\+line. 
+\begin{DoxyParams}{Parameters}
+{\em line} & line to be processed and execute. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the status of executed command. 
+\end{DoxyReturn}
+\index{brobash.\+c@{brobash.\+c}!read\+\_\+line@{read\+\_\+line}}
+\index{read\+\_\+line@{read\+\_\+line}!brobash.\+c@{brobash.\+c}}
+\subsubsection[{\texorpdfstring{read\+\_\+line(\+F\+I\+L\+E $\ast$stream, size\+\_\+t $\ast$line\+\_\+size, ssize\+\_\+t $\ast$read\+\_\+status)}{read_line(FILE *stream, size_t *line_size, ssize_t *read_status)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ read\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{stream, }
+\item[{size\+\_\+t $\ast$}]{line\+\_\+size, }
+\item[{ssize\+\_\+t $\ast$}]{read\+\_\+status}
+\end{DoxyParamCaption}
+)}\hypertarget{brobash_8c_a6129eaf8e0216e9b4740365e938d24b1}{}\label{brobash_8c_a6129eaf8e0216e9b4740365e938d24b1}
+Reads the line from whichever stream that was provided. 
+\begin{DoxyParams}{Parameters}
+{\em stream} & \\
+\hline
+{\em line\+\_\+size} & Out param. \\
+\hline
+{\em read\+\_\+status} & Out param. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+line 
+\end{DoxyReturn}
+\index{brobash.\+c@{brobash.\+c}!run\+\_\+loop@{run\+\_\+loop}}
+\index{run\+\_\+loop@{run\+\_\+loop}!brobash.\+c@{brobash.\+c}}
+\subsubsection[{\texorpdfstring{run\+\_\+loop(\+F\+I\+L\+E $\ast$stream)}{run_loop(FILE *stream)}}]{\setlength{\rightskip}{0pt plus 5cm}void run\+\_\+loop (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}\hypertarget{brobash_8c_a5f6993e7744fc5b04992ce29fd0b0dad}{}\label{brobash_8c_a5f6993e7744fc5b04992ce29fd0b0dad}
+Main loop of the shell, displays a prompt, accepts and runs commands. 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Stream can be stdin or a file pointer. \\
+\hline
+\end{DoxyParams}

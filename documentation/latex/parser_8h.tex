@@ -1,0 +1,28 @@
+\hypertarget{parser_8h}{}\section{/home/theawless/\+Clion\+Projects/brobash/src/parser.h File Reference}
+\label{parser_8h}\index{/home/theawless/\+Clion\+Projects/brobash/src/parser.\+h@{/home/theawless/\+Clion\+Projects/brobash/src/parser.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsimple__command}{simple\+\_\+command} $\ast$ \hyperlink{parser_8h_aec7647de8bfd8ff3e9c8774ffc4b9b8d}{parse\+\_\+line} (char $\ast$line, int $\ast$num\+\_\+commands)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{parser.\+h@{parser.\+h}!parse\+\_\+line@{parse\+\_\+line}}
+\index{parse\+\_\+line@{parse\+\_\+line}!parser.\+h@{parser.\+h}}
+\subsubsection[{\texorpdfstring{parse\+\_\+line(char $\ast$line, int $\ast$num\+\_\+commands)}{parse_line(char *line, int *num_commands)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf simple\+\_\+command}$\ast$ parse\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{line, }
+\item[{int $\ast$}]{num\+\_\+commands}
+\end{DoxyParamCaption}
+)}\hypertarget{parser_8h_aec7647de8bfd8ff3e9c8774ffc4b9b8d}{}\label{parser_8h_aec7647de8bfd8ff3e9c8774ffc4b9b8d}
+Parses the line to find all commands. Tokenize by pipes to find commands. Tokenize by whitespace to find arguements. If IO redirection is found, edit the command struct. 
+\begin{DoxyParams}{Parameters}
+{\em line} & parses this line \\
+\hline
+{\em num\+\_\+commands} & out param, number of commands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of commands. 
+\end{DoxyReturn}

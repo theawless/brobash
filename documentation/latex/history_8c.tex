@@ -1,0 +1,60 @@
+\hypertarget{history_8c}{}\section{/home/theawless/\+Clion\+Projects/brobash/src/history.c File Reference}
+\label{history_8c}\index{/home/theawless/\+Clion\+Projects/brobash/src/history.\+c@{/home/theawless/\+Clion\+Projects/brobash/src/history.\+c}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{history_8c_ac7b653fcfb49e581736e9ceb9f33b31a}{add\+\_\+history} (char $\ast$line)
+\item 
+char $\ast$ \hyperlink{history_8c_aedbf872835c358376f1f17a0a5a2fc18}{get\+\_\+recent\+\_\+history} ()
+\item 
+char $\ast$ \hyperlink{history_8c_a7fe960e051cd1dc366611cec2d2958b8}{get\+\_\+nth\+\_\+history} (int num)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{history_8c_abce9f5dc9c83f2639b72024fdee5d388}{end} = 0
+\item 
+char $\ast$$\ast$ \hyperlink{history_8c_a5f9f02d4391a83cb01df97fe1ea2b6c5}{history} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{history.\+c@{history.\+c}!add\+\_\+history@{add\+\_\+history}}
+\index{add\+\_\+history@{add\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection[{\texorpdfstring{add\+\_\+history(char $\ast$line)}{add_history(char *line)}}]{\setlength{\rightskip}{0pt plus 5cm}void add\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{history_8c_ac7b653fcfb49e581736e9ceb9f33b31a}{}\label{history_8c_ac7b653fcfb49e581736e9ceb9f33b31a}
+Adds a line to the history. Removes the old history. 
+\begin{DoxyParams}{Parameters}
+{\em line} & to be added in history. \\
+\hline
+\end{DoxyParams}
+\index{history.\+c@{history.\+c}!get\+\_\+nth\+\_\+history@{get\+\_\+nth\+\_\+history}}
+\index{get\+\_\+nth\+\_\+history@{get\+\_\+nth\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection[{\texorpdfstring{get\+\_\+nth\+\_\+history(int num)}{get_nth_recent_history(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\+\_\+nth\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{history_8c_a7fe960e051cd1dc366611cec2d2958b8}{}\label{history_8c_a7fe960e051cd1dc366611cec2d2958b8}
+\index{history.\+c@{history.\+c}!get\+\_\+recent\+\_\+history@{get\+\_\+recent\+\_\+history}}
+\index{get\+\_\+recent\+\_\+history@{get\+\_\+recent\+\_\+history}!history.\+c@{history.\+c}}
+\subsubsection[{\texorpdfstring{get\+\_\+recent\+\_\+history()}{get_recent_history()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\+\_\+recent\+\_\+history (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{history_8c_aedbf872835c358376f1f17a0a5a2fc18}{}\label{history_8c_aedbf872835c358376f1f17a0a5a2fc18}
+
+
+\subsection{Variable Documentation}
+\index{history.\+c@{history.\+c}!end@{end}}
+\index{end@{end}!history.\+c@{history.\+c}}
+\subsubsection[{\texorpdfstring{end}{end}}]{\setlength{\rightskip}{0pt plus 5cm}int end = 0}\hypertarget{history_8c_abce9f5dc9c83f2639b72024fdee5d388}{}\label{history_8c_abce9f5dc9c83f2639b72024fdee5d388}
+\index{history.\+c@{history.\+c}!history@{history}}
+\index{history@{history}!history.\+c@{history.\+c}}
+\subsubsection[{\texorpdfstring{history}{history}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ history = N\+U\+LL}\hypertarget{history_8c_a5f9f02d4391a83cb01df97fe1ea2b6c5}{}\label{history_8c_a5f9f02d4391a83cb01df97fe1ea2b6c5}
